@@ -1,10 +1,10 @@
-// src/Layout.tsx
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import bgImage from '../assets/Background.jpg';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
-const Layout: React.FC = () => {
+const LandpageLayout: React.FC = () => {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
       {/* Background image */}
@@ -26,12 +26,10 @@ const Layout: React.FC = () => {
           <Outlet />
         </main>
 
-        <footer className="bg-black bg-opacity-70 text-white text-center py-4">
-          <p>&copy; {new Date().getFullYear()} Amorty Billiards Training Ground. All rights reserved.</p>
-        </footer>
+        <Footer /> {/* ← ini bro, tinggal panggil komponen Footer-nya */}
       </div>
     </div>
   );
 };
 
-export default Layout;
+export default LandpageLayout;

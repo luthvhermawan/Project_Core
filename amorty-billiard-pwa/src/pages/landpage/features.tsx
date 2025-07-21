@@ -1,4 +1,4 @@
-import PageWrapper from "../components/wrapper";
+import PageWrapper from "../../components/wrapper";
 import { FaCalendarCheck, FaHistory, FaMobileAlt, FaBell } from 'react-icons/fa';
 
 const features = [
@@ -42,9 +42,6 @@ const Feature = () => (
           </div>
         ))}
       </div>
-      <footer className="text-center text-sm mt-16 border-t border-gray-700 pt-4">
-        &copy; {new Date().getFullYear()} Amorty Billiards Training Ground. All rights reserved.
-      </footer>
     </div>
   </PageWrapper>
 );

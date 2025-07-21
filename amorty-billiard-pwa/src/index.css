@@ -1,7 +1,9 @@
+/* @tailwind base; @tailwind components; @tailwind utilities - otomatis dari Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Animasi fade in */
 @layer utilities {
     .animate-fade-in {
         animation: fadeIn 0.7s ease-out both;
@@ -24,10 +26,9 @@
     }
 }
 
-
-
+/* Pengaturan untuk tema */
 @layer base {
-  :root {
+    :root {
         --background: 0 0% 100%;
         --foreground: 0 0% 3.9%;
         --card: 0 0% 100%;
@@ -54,7 +55,8 @@
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
     }
-  .dark {
+
+    .dark {
         --background: 0 0% 3.9%;
         --foreground: 0 0% 98%;
         --card: 0 0% 3.9%;
@@ -82,11 +84,13 @@
     }
 }
 
+/* Video styling */
 video {
     object-fit: cover !important;
     background-color: transparent !important;
 }
 
+/* Kelas untuk animasi fade */
 @keyframes fade {
     0% {
         opacity: 0;
@@ -103,11 +107,13 @@ video {
     animation: fade 0.3s ease forwards;
 }
 
+/* Pengaturan dasar untuk body dan elemen lainnya */
 @layer base {
-  * {
-    @apply border-border;
+    * {
+        @apply border-border;
     }
-  body {
-    @apply bg-background text-foreground;
+
+    body {
+        @apply bg-background text-foreground;
     }
 }

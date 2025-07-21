@@ -1,4 +1,4 @@
-import PageWrapper from "../components/wrapper";
+import PageWrapper from "../../components/wrapper";
 
 const About = () => (
   <PageWrapper>
@@ -26,9 +26,6 @@ const About = () => (
           Visi kami adalah menjadi pusat pelatihan biliar berbasis teknologi terbaik di Indonesia. Misi kami adalah memberikan layanan yang modern, fleksibel, dan menjangkau seluruh kalangan melalui sistem digital yang praktis dan efisien.
         </p>
       </div>
-      <footer className="text-center text-sm mt-16 border-t border-gray-700 pt-4">
-        &copy; {new Date().getFullYear()} Amorty Billiards Training Ground. All rights reserved.
-      </footer>
     </div>
   </PageWrapper>
 );
