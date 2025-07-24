@@ -7,7 +7,7 @@ Sistem ini adalah aplikasi berbasis web yang dibangun untuk membantu pengguna da
 Sistem menyediakan login dan registrasi terpisah untuk pengguna dan admin menggunakan Firebase Authentication, menjaga keamanan akses.
 - 📅 Pemesanan Antrian Meja dengan Validasi Waktu
 Pengguna dapat memilih nomor meja, tanggal, dan durasi booking yang divalidasi secara real-time agar tidak bentrok dengan jadwal lain.
-- ⏱️ Mekanisme Concurrency Control (Firebase Transaction)
+- 📌 Mekanisme Concurrency Control (Firebase Transaction)
 Untuk mencegah race condition dan double booking, sistem menggunakan runTransaction() dari Firebase Realtime Database sehingga hanya satu user yang berhasil booking jika terjadi pemesanan bersamaan.
 - 📊 Dashboard Khusus untuk User & Admin
 Dashboard user menampilkan informasi status meja, event, dan riwayat reservasi. Admin memiliki kontrol penuh untuk melihat semua data booking dan mengelola status meja.
